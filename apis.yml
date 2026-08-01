@@ -1,8 +1,23 @@
 aid: pocket-protector
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pocket-protector.png
 name: Pocket Protector
-description: 'Pocket Protector is a company surfaced as a portfolio company of electric-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: security. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Pocket Protector is a consumer peer-to-peer trading application operated by Pocket Protector
+  Inc. Under the tagline "Trade Better Together," it lets users trade items and assets with one another
+  through an iOS app and an accompanying Telegram bot (@pocketprotectorbot). The company was surfaced as
+  a portfolio company of Electric Capital and added to the API Evangelist network for enrichment; as of
+  this pass it publishes a marketing site with privacy and terms pages but no public developer API, SDK,
+  documentation, or OpenAPI surface.'
 url: https://raw.githubusercontent.com/api-evangelist/pocket-protector/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Security
+- Trading
+- Consumer App
+- Mobile
+- iOS
+- Telegram
+- Peer-to-Peer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +43,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pocket-protector-domain-security.yml
 - type: Website
   url: https://www.pocketprotector.xyz/
+- type: PrivacyPolicy
+  url: https://www.pocketprotector.xyz/privacy-policy
+- type: TermsOfService
+  url: https://www.pocketprotector.xyz/terms-of-service
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
